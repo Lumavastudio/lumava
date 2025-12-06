@@ -1,0 +1,16 @@
+[00:00:00.695] Server  LOG      ✓ Ready in 487ms
+[00:00:03.982] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.129] Browser WARN    Image with src "/images/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:09.274] Browser WARN    Image with src "/images/portfolio/videography3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:09.274] Browser WARN    Image with src "/images/portfolio/photography2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:09.274] Browser WARN    Image with src "/images/portfolio/motion-design3.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:09.274] Browser WARN    Image with src "/images/portfolio/brand-music2.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:12.590] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:14.673] Server  LOG     Looking for file: "F:\\LumavaProjects\\lumava-site\\public\\portfolio\\photography\\project001\\photo10.m4v"
+[00:00:20.593] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:21.185] Server  LOG     Looking for file: "F:\\LumavaProjects\\lumava-site\\public\\portfolio\\videography\\project005\\video001.m4v"
+[00:00:22.300] Server  LOG     Looking for file: "F:\\LumavaProjects\\lumava-site\\public\\portfolio\\videography\\project005\\video004.m4v"
+[00:00:22.768] Server  LOG     Looking for file: "F:\\LumavaProjects\\lumava-site\\public\\portfolio\\videography\\project005\\video003.m4v"
+[00:00:23.001] Server  LOG     Looking for file: "F:\\LumavaProjects\\lumava-site\\public\\portfolio\\videography\\project005\\video002.m4v"
+[00:00:26.540] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:26.540] Browser WARN    Image with src "/images/about1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

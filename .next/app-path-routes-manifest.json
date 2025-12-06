@@ -1,0 +1,15 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/about/page": "/about",
+  "/api/video/route": "/api/video",
+  "/contact/page": "/contact",
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/portfolio/brand-and-music/page": "/portfolio/brand-and-music",
+  "/portfolio/motion-design/page": "/portfolio/motion-design",
+  "/portfolio/page": "/portfolio",
+  "/portfolio/photography/page": "/portfolio/photography",
+  "/portfolio/videography/page": "/portfolio/videography",
+  "/services/page": "/services"
+}

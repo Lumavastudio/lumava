@@ -1,0 +1,6 @@
+{
+  "/api/video/route": "app/api/video/route.js",
+  "/page": "app/page.js",
+  "/portfolio/photography/page": "app/portfolio/photography/page.js",
+  "/portfolio/videography/page": "app/portfolio/videography/page.js"
+}
