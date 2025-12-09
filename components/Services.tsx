@@ -22,7 +22,7 @@ const fade: Variants = {
 
 export default function Services() {
   return (
-    <section className="w-full py-28 bg-black text-white">
+    <section className="w-full py-10 bg-black text-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section Title */}

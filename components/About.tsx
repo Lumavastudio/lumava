@@ -26,7 +26,7 @@ const imageItem: Variants = {
 
 export default function About() {
   return (
-    <section className="w-full py-32 bg-black text-white flex justify-center">
+    <section className="w-full py-25 bg-black text-white flex justify-center">
       <motion.div
         variants={container}
         initial="hidden"

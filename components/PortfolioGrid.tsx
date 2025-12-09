@@ -60,7 +60,7 @@ export default function PortfolioGridGSAP() {
   }, []);
 
   return (
-    <section className="w-full bg-black py-28 px-6">
+    <section className="w-full bg-black py-0 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <div className="text-center mb-16">

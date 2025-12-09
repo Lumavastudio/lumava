@@ -148,7 +148,7 @@ export default function PhotographyPage() {
             </button>
 
             <div className="w-full flex justify-center items-center relative overflow-hidden rounded-md flex-shrink-0">
-              {lightboxProject.media.length ? (
+              {lightboxProject.media.length && current < lightboxProject.media.length ? (
                 lightboxProject.media[current].type === "video" ? (
                   <video
                     src={`/api/video?file=${lightboxProject.media[current].src}`}
@@ -167,7 +167,7 @@ export default function PhotographyPage() {
                 )
               ) : (
                 <div className="w-full h-64 bg-zinc-900 rounded-md flex items-center justify-center text-gray-400">
-                  No media found
+                  Media not found
                 </div>
               )}
 

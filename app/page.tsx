@@ -10,6 +10,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import PortfolioGrid from "@/components/PortfolioGrid";
+import InstagramMarquee from "@/components/InstagramMarquee";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -36,6 +37,8 @@ export default function Home() {
         <PortfolioGrid />
       </section>
 
+       <InstagramMarquee />
+            
       {/* SERVICES SECTION */}
       <section id="services">
         <Services />

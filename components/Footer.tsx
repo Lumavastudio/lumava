@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 export default function Footer() {
   const socialLinks = [
-    { icon: <Instagram className="w-5 h-5 drop-shadow-md" />, href: "#" },
-    { icon: <Youtube className="w-5 h-5 drop-shadow-md" />, href: "#" },
-    { icon: <Linkedin className="w-5 h-5 drop-shadow-md" />, href: "#" },
+    { icon: <Instagram className="w-5 h-5 drop-shadow-md" />, href: "https://www.instagram.com/lumava.studio/" },
+    { icon: <Youtube className="w-5 h-5 drop-shadow-md" />, href: "https://www.youtube.com/@Lumava.Studio" },
+    { icon: <Linkedin className="w-5 h-5 drop-shadow-md" />, href: "https://www.linkedin.com/in/reza-hajibagheran/" },
   ];
 
   return (
@@ -43,6 +43,8 @@ export default function Footer() {
             <Link
               key={idx}
               href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="transition-transform duration-300 hover:scale-110 hover:text-white/90"
             >
               {link.icon}

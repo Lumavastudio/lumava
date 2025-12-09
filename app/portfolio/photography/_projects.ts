@@ -52,8 +52,8 @@ export const projects: Project[] = [
       { type: "image", src: "/portfolio/photography/project002/photo06.webp" },
       { type: "image", src: "/portfolio/photography/project002/photo07.webp" },
       { type: "image", src: "/portfolio/photography/project002/photo08.webp" },
-      { type: "video", src: "/portfolio/photography/project002/photo09.m4v" }
-    ]
+      { type: "video", src: "/portfolio/photography/project002/photo09.m4v" },
+    ],
   },
   {
     id: "project003",
@@ -67,8 +67,8 @@ export const projects: Project[] = [
       { type: "image", src: "/portfolio/photography/project003/photo03.webp" },
       { type: "image", src: "/portfolio/photography/project003/photo04.webp" },
       { type: "image", src: "/portfolio/photography/project003/photo05.webp" },
-      { type: "video", src: "/portfolio/photography/project003/photo06.m4v" }
-    ]
+      { type: "video", src: "/portfolio/photography/project003/photo06.m4v" },
+    ],
   },
   {
     id: "project004",
@@ -87,8 +87,8 @@ export const projects: Project[] = [
       { type: "image", src: "/portfolio/photography/project004/photo08.webp" },
       { type: "image", src: "/portfolio/photography/project004/photo09.webp" },
       { type: "image", src: "/portfolio/photography/project004/photo10.webp" },
-      { type: "video", src: "/portfolio/photography/project004/photo11.m4v" }
-    ]
+      { type: "video", src: "/portfolio/photography/project004/photo11.m4v" },
+    ],
   },
   {
     id: "project005",
@@ -98,7 +98,7 @@ export const projects: Project[] = [
     cover: "/portfolio/photography/project005/photo01.webp",
     media: [
       { type: "image", src: "/portfolio/photography/project005/photo01.webp" },
-      { type: "video", src: "/portfolio/photography/project005/photo02.m4v" },
+      { type: "image", src: "/portfolio/photography/project005/photo02.webp" },
       { type: "image", src: "/portfolio/photography/project005/photo03.webp" },
       { type: "image", src: "/portfolio/photography/project005/photo04.webp" },
       { type: "image", src: "/portfolio/photography/project005/photo05.webp" },
@@ -111,8 +111,7 @@ export const projects: Project[] = [
       { type: "image", src: "/portfolio/photography/project005/photo12.webp" },
       { type: "image", src: "/portfolio/photography/project005/photo13.webp" },
       { type: "image", src: "/portfolio/photography/project005/photo14.webp" },
-      { type: "image", src: "/portfolio/photography/project005/photo15.webp" }
-    ]
+    ],
   },
   {
     id: "project006",
@@ -125,11 +124,10 @@ export const projects: Project[] = [
       { type: "video", src: "/portfolio/photography/project006/photo02.m4v" },
       { type: "image", src: "/portfolio/photography/project006/photo03.webp" },
       { type: "image", src: "/portfolio/photography/project006/photo04.webp" },
-      { type: "video", src: "/portfolio/photography/project006/photo05.m4v" },
+      { type: "image", src: "/portfolio/photography/project006/photo05.webp" },
       { type: "image", src: "/portfolio/photography/project006/photo06.webp" },
       { type: "image", src: "/portfolio/photography/project006/photo07.webp" },
       { type: "image", src: "/portfolio/photography/project006/photo08.webp" },
-      { type: "image", src: "/portfolio/photography/project006/photo09.webp" }
-    ]
+    ],
   }
 ];
