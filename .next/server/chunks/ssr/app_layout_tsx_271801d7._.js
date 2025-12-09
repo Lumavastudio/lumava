@@ -1,3 +1,0 @@
-module.exports=[33290,a=>{"use strict";var b=a.i(7997);function c({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:"min-h-screen flex flex-col bg-black text-white",children:(0,b.jsx)("main",{className:"flex-1",children:a})})})}a.s(["default",()=>c,"metadata",0,{title:"Lumava Portfolio",description:"Professional Photography & Video Portfolio"}])}];
-
-//# sourceMappingURL=app_layout_tsx_271801d7._.js.map

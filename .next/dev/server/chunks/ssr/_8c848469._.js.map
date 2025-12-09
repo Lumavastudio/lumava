@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///F:/LumavaProjects/lumava-site/app/layout.tsx"],"sourcesContent":["import \"./globals.css\";\nimport { ReactNode } from \"react\";\n\nexport const metadata = {\n  title: \"Lumava Portfolio\",\n  description: \"Professional Photography & Video Portfolio\",\n};\n\nexport default function RootLayout({ children }: { children: ReactNode }) {\n  return (\n    <html lang=\"en\">\n      <body className=\"min-h-screen flex flex-col bg-black text-white\">\n        {/* Main content */}\n        <main className=\"flex-1\">\n          {children}\n        </main>\n\n        {/* Footer */}\n        \n      </body>\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AAGO,MAAM,WAAW;IACtB,OAAO;IACP,aAAa;AACf;AAEe,SAAS,WAAW,EAAE,QAAQ,EAA2B;IACtE,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC;YAAK,WAAU;sBAEd,cAAA,8OAAC;gBAAK,WAAU;0BACb;;;;;;;;;;;;;;;;AAQX"}},
-    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file:///F:/LumavaProjects/lumava-site/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}
