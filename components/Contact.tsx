@@ -18,7 +18,7 @@ const fadeUp: Variants = {
 };
 
 export default function Contact() {
-  const email = "lumavastudio" + "@gmail.com";
+  const email = "lumavastudio@gmail.com";
 
   return (
     <section
@@ -66,24 +66,24 @@ export default function Contact() {
         {/* CONTACT METHODS */}
         <div className="space-y-6">
 
-          {/* EMAIL BUTTON */}
-          <motion.button
+          {/* FORM LINKED EMAIL BUTTON */}
+          <motion.a
             variants={fadeUp}
             custom={3}
-            onClick={() => (window.location.href = "mailto:" + email)}
+            href="#contact-form"
             className="inline-block px-12 py-4 border border-white/30 rounded-xl 
                        hover:bg-white hover:text-black transition-all duration-300 
                        text-lg tracking-wide font-medium"
             style={{ fontFamily: "'Cinzel', serif" }}
           >
             Email Us
-          </motion.button>
+          </motion.a>
 
           {/* INSTAGRAM BUTTON */}
           <motion.a
             variants={fadeUp}
             custom={4}
-            href="https://instagram.com/lumavastudio"
+            href="https://www.instagram.com/lumava.studio/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-12 py-4 border border-white/30 rounded-xl 
@@ -96,13 +96,13 @@ export default function Contact() {
 
           {/* FORM CONTACT */}
           <motion.form
+            id="contact-form"
             variants={fadeUp}
             custom={5}
             action="https://formsubmit.co/lumavastudio@gmail.com"
             method="POST"
             className="space-y-4 max-w-md mx-auto"
           >
-            {/* formsubmit settings */}
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
 
