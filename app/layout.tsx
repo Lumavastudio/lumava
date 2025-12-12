@@ -1,5 +1,6 @@
 import "./globals.css";
 import { ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "Lumava Portfolio",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
         {/* Footer */}
         
+        <Analytics />
       </body>
     </html>
   );
