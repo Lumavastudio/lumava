@@ -15,9 +15,10 @@ export default function Hero() {
         muted
         playsInline
         preload="auto"
-        poster="/videos/hero-fallback.jpg"
+        poster="/videos/hero-fallback.jpg?v=2"
       >
-        <source src="/videos/hero.mp4" type="video/mp4" />
+        <source src="/videos/hero.mp4?v=2" type="video/mp4" />
+        <source src="/videos/hero.m4v?v=2" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
