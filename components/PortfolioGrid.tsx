@@ -102,12 +102,12 @@ export default function PortfolioGridGSAP() {
                   alt={item.title}
                   fill
                   className="object-cover transition-transform duration-700 
-                             group-hover:scale-110 brightness-[92%] contrast-[104%]"
+                             group-hover:scale-120 brightness-[92%] contrast-[104%]"
                 />
 
                 {/* DARK GRADIENT */}
                 <div
-                  className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent 
+                  className="absolute inset-0 bg-gradient-to-t from-black/1 to-transparent 
                              opacity-80 group-hover:opacity-95 transition-opacity duration-500"
                 />
 

@@ -1,27 +1,29 @@
-import type { Metadata } from "next";
+// app/layout.tsx
 import "./globals.css";
 import { ReactNode } from "react";
 
-export const metadata: Metadata = {
-  title: "Lumava Portfolio",
-  description: "Professional Photography & Video Portfolio",
+export const metadata = {
+  title: "Lumava Studio",
+  description: "Crafting cinematic visuals & immersive experiences for brands and creators.",
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico?v=10" },
+      { url: "/favicon-32x32.png?v=10", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png?v=10", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png?v=10", sizes: "180x180" }],
   },
-  manifest: "/site.webmanifest",
+  manifest: "/site.webmanifest?v=10",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-black text-white">
-        {/* Main content */}
-        <main className="flex-1">{children}</main>
-
-        {/* Footer */}
-      </body>
+      <head>
+        {/* Theme color */}
+        <meta name="theme-color" content="#000000" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

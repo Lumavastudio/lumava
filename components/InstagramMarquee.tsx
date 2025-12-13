@@ -24,7 +24,8 @@ export default function InstagramMarquee() {
   const rafRef = useRef<number | null>(null);
   const lastTimeRef = useRef<number | null>(null);
 
-  const SPEED = 120;
+  const SPEED = 100;
+  const GAP = 28;
 
   useEffect(() => {
     if (!containerRef.current) return;
@@ -33,12 +34,14 @@ export default function InstagramMarquee() {
       containerRef.current.querySelectorAll("[data-marquee-item]")
     ) as HTMLDivElement[];
 
-    widthsRef.current = itemRefs.current.map((el) => el.getBoundingClientRect().width);
+    widthsRef.current = itemRefs.current.map(
+      (el) => el.getBoundingClientRect().width
+    );
 
     let x = 0;
     positionsRef.current = widthsRef.current.map((w) => {
       const cur = x;
-      x += w + 32; // 👈 فاصله را همینجا هم لحاظ میکنیم
+      x += w + GAP;
       return cur;
     });
 
@@ -57,20 +60,22 @@ export default function InstagramMarquee() {
 
       let rightmost = -Infinity;
       for (let i = 0; i < positionsRef.current.length; i++) {
-        const right = positionsRef.current[i] + widthsRef.current[i] + 32;
+        const right = positionsRef.current[i] + widthsRef.current[i] + GAP;
         if (right > rightmost) rightmost = right;
       }
 
       for (let i = 0; i < positionsRef.current.length; i++) {
         if (positionsRef.current[i] + widthsRef.current[i] < 0) {
           positionsRef.current[i] = rightmost;
-          rightmost = positionsRef.current[i] + widthsRef.current[i] + 32;
+          rightmost =
+            positionsRef.current[i] + widthsRef.current[i] + GAP;
         }
       }
 
       for (let i = 0; i < itemRefs.current.length; i++) {
         const el = itemRefs.current[i];
-        if (el) el.style.transform = `translateX(${positionsRef.current[i]}px)`;
+        if (el)
+          el.style.transform = `translateX(${positionsRef.current[i]}px)`;
       }
 
       rafRef.current = requestAnimationFrame(step);
@@ -84,8 +89,9 @@ export default function InstagramMarquee() {
   }, []);
 
   return (
-    <section className="w-full bg-black text-white py-20 overflow-hidden">
-      <div className="max-w-6xl mx-auto text-center mb-8 px-6 md:px-16 lg:px-28">
+    <section className="w-full bg-black text-white pt-20 pb-28 overflow-hidden">
+      {/* Title */}
+      <div className="max-w-6xl mx-auto text-center mb-4 px-6">
         <h2
           className="text-3xl md:text-4xl font-light"
           style={{ fontFamily: "'Cinzel', serif" }}
@@ -94,35 +100,63 @@ export default function InstagramMarquee() {
         </h2>
       </div>
 
+      {/* Marquee */}
       <div
         ref={containerRef}
-        className="relative w-full h-[560px] overflow-hidden"
+        className="relative w-full h-[420px] md:h-[560px] overflow-hidden"
       >
         {items.map((post, idx) => (
           <div
             key={idx}
             data-marquee-item
             ref={(el) => {
-            if (el) itemRefs.current[idx] = el;
+              if (el) itemRefs.current[idx] = el;
             }}
-
-            className="absolute top-1/2 -translate-y-1/2 rounded-xl overflow-hidden"
-            style={{
-              left: 0,
-              willChange: "transform",
-              marginRight: "32px", // 👈 فاصله بین آيتم‌ها
-            }}
+            className="absolute top-1/2 -translate-y-1/2"
+            style={{ left: 0, willChange: "transform" }}
           >
             <a
               href={post.url}
               target="_blank"
-              className="block relative w-[180px] md:w-[240px] aspect-[9/16]"
+              className="
+                group
+                block
+                relative
+                w-[170px] md:w-[240px]
+                aspect-[9/16]
+                rounded-xl
+                overflow-hidden
+                transition-transform duration-300
+                hover:scale-105
+              "
             >
               <Image
                 src={post.src}
                 alt="instagram"
                 fill
-                className="object-cover transition-transform duration-300 hover:scale-[1.07]"
+                className="object-cover"
+              />
+
+              {/* Hover Overlay */}
+              <div
+                className="
+                  absolute inset-0
+                  bg-gradient-to-t from-black/60 via-black/10 to-transparent
+                  opacity-0
+                  group-hover:opacity-100
+                  transition-opacity duration-300
+                "
+              />
+
+              {/* Hover Ring */}
+              <div
+                className="
+                  absolute inset-0
+                  rounded-xl
+                  ring-0 ring-white/40
+                  group-hover:ring-2
+                  transition-all duration-300
+                "
               />
             </a>
           </div>
