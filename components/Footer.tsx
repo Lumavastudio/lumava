@@ -8,7 +8,7 @@ export default function Footer() {
   const socialLinks = [
     { icon: <Instagram className="w-5 h-5 drop-shadow-md" />, href: "https://www.instagram.com/lumava.studio/" },
     { icon: <Youtube className="w-5 h-5 drop-shadow-md" />, href: "https://www.youtube.com/@Lumava.Studio" },
-    { icon: <Linkedin className="w-5 h-5 drop-shadow-md" />, href: "https://www.linkedin.com/in/reza-hajibagheran/" },
+    { icon: <Linkedin className="w-5 h-5 drop-shadow-md" />, href: "https://www.linkedin.com/in/reza-rayen/" },
   ];
 
   return (

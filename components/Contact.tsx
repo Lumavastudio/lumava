@@ -147,7 +147,7 @@ export default function Contact() {
             className="flex justify-center gap-8 mt-8"
           >
             <a
-              href="https://www.linkedin.com/in/reza-hajibagheran/"
+              href="https://www.linkedin.com/in/reza-Rayen/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-5xl hover:text-white/70 transition-colors duration-300"

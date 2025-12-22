@@ -51,7 +51,7 @@ export default function About() {
             <div className="flex flex-col justify-between h-full space-y-5">
               <p className="text-lg leading-relaxed text-white/90">
                 Lumava Studio is a modern cinematic design house built on the belief that visual storytelling can shape emotion, memory, and identity.  
-                Founded by <span className="font-bold text-white">Reza Raeen</span>, a multidisciplinary Iranian-Canadian artist with a background in animation, visual arts, photography, music, and motion design, Lumava blends minimal aesthetics with film-inspired direction to create refined, emotionally resonant experiences.
+                Founded by <span className="font-bold text-white">Reza Rayen</span>, a multidisciplinary Iranian-Canadian artist with a background in animation, visual arts, photography, music, and motion design, Lumava blends minimal aesthetics with film-inspired direction to create refined, emotionally resonant experiences.
               </p>
               <p className="text-lg leading-relaxed text-white/90">
                 <span className="font-bold text-white">Reza’s work</span> is shaped by a rare combination of technical precision and artistic intuition, a visual sensitivity developed through years of creating across mediums: portrait and commercial photography, content creation, music production, motion graphics, and collaborative brand projects. His approach is calm, intentional, and human-centered, focusing on atmosphere, detail, and subtle moments that define a brand’s presence.
