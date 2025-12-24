@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, Variants, easeOut } from "framer-motion";
 import React from "react";
-import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa"; // آیکون‌ها
+import { motion, Variants, easeOut } from "framer-motion";
+import { FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 32 },
@@ -25,7 +25,7 @@ export default function Contact() {
       id="contact"
       className="w-full bg-black text-white py-28 px-6 md:px-16 lg:px-28 relative overflow-hidden"
     >
-      {/* GRADIENT LINE */}
+      {/* TOP GRADIENT LINE */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
 
       <motion.div
@@ -59,56 +59,62 @@ export default function Contact() {
           className="text-white/70 md:text-lg leading-relaxed max-w-xl mx-auto"
           style={{ fontFamily: "'Cinzel', serif" }}
         >
-          For collaborations, bookings, or creative projects, feel free to reach out.
-          We aim to respond within 24 hours.
+          For collaborations, bookings, or creative projects, feel free to reach
+          out. We aim to respond within 24 hours.
         </motion.p>
 
-        {/* CONTACT METHODS */}
+        {/* ACTION BUTTONS */}
         <div className="space-y-6">
-
-          {/* FORM LINKED EMAIL BUTTON */}
+          {/* DIRECT EMAIL */}
           <motion.a
             variants={fadeUp}
             custom={3}
-            href="#contact-form"
-            className="inline-block px-12 py-4 border border-white/30 rounded-xl 
-                       hover:bg-white hover:text-black transition-all duration-300 
+            href={`mailto:${email}?subject=New%20Project&body=Hi%20Lumava,`}
+            className="inline-block px-12 py-4 border border-white/30 rounded-xl
+                       hover:bg-white hover:text-black transition-all duration-300
                        text-lg tracking-wide font-medium"
             style={{ fontFamily: "'Cinzel', serif" }}
           >
             Email Us
           </motion.a>
 
-          {/* INSTAGRAM BUTTON */}
+          {/* INSTAGRAM DM */}
           <motion.a
             variants={fadeUp}
             custom={4}
             href="https://www.instagram.com/lumava.studio/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-12 py-4 border border-white/30 rounded-xl 
-                       hover:bg-white hover:text-black transition-all duration-300 
+            className="inline-block px-12 py-4 border border-white/30 rounded-xl
+                       hover:bg-white hover:text-black transition-all duration-300
                        text-lg tracking-wide font-medium"
             style={{ fontFamily: "'Cinzel', serif" }}
           >
             Instagram DM
           </motion.a>
 
-          {/* FORM CONTACT */}
+          {/* CONTACT FORM */}
           <motion.form
             id="contact-form"
             variants={fadeUp}
             custom={5}
-            action="https://formsubmit.co/lumavastudio@gmail.com"
+            action={`https://formsubmit.co/${email}`}
             method="POST"
             className="space-y-4 max-w-md mx-auto"
           >
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://lumavastudio.com"
+            />
 
             <input
               name="name"
               required
+              defaultValue=""
+              autoComplete="off"
               placeholder="Your Name"
               className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-white outline-none"
             />
@@ -117,6 +123,8 @@ export default function Contact() {
               type="email"
               name="email"
               required
+              defaultValue=""
+              autoComplete="off"
               placeholder="Your Email"
               className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-white outline-none"
             />
@@ -124,6 +132,8 @@ export default function Contact() {
             <textarea
               name="message"
               required
+              defaultValue=""
+              autoComplete="off"
               rows={4}
               placeholder="Your Message"
               className="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 focus:border-white outline-none resize-none"
@@ -131,8 +141,8 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full px-12 py-4 border border-white/30 rounded-xl 
-                         hover:bg-white hover:text-black transition-all duration-300 
+              className="w-full px-12 py-4 border border-white/30 rounded-xl
+                         hover:bg-white hover:text-black transition-all duration-300
                          text-lg tracking-wide font-medium"
               style={{ fontFamily: "'Cinzel', serif" }}
             >
@@ -150,32 +160,33 @@ export default function Contact() {
               href="https://www.linkedin.com/in/reza-Rayen/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-5xl hover:text-white/70 transition-colors duration-300"
+              className="text-white text-5xl hover:text-white/70 transition-colors"
             >
               <FaLinkedin />
             </a>
+
             <a
               href="https://www.youtube.com/@Lumava.Studio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-5xl hover:text-white/70 transition-colors duration-300"
+              className="text-white text-5xl hover:text-white/70 transition-colors"
             >
               <FaYoutube />
             </a>
+
             <a
               href="https://www.instagram.com/lumava.studio"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white text-5xl hover:text-white/70 transition-colors duration-300"
+              className="text-white text-5xl hover:text-white/70 transition-colors"
             >
               <FaInstagram />
             </a>
           </motion.div>
-
         </div>
       </motion.div>
 
-      {/* SUBTLE BOTTOM SHADOW */}
+      {/* BOTTOM FADE */}
       <div className="absolute bottom-0 left-0 w-full h-[120px] bg-gradient-to-t from-black to-transparent pointer-events-none" />
     </section>
   );
