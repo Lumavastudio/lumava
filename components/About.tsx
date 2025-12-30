@@ -1,6 +1,7 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const container: Variants = {
   hidden: {},
@@ -15,13 +16,13 @@ const textItem = (delay = 0): Variants => ({
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { ease: "easeOut", duration: 0.8, delay }, // ✅ اصلاح شد
+    transition: { ease: "easeOut", duration: 0.8, delay },
   },
 });
 
 const imageItem: Variants = {
   hidden: { opacity: 0, x: 100, scale: 0.95 },
-  show: { opacity: 1, x: 0, scale: 1, transition: { ease: "easeOut", duration: 1 } }, // ✅ اصلاح شد
+  show: { opacity: 1, x: 0, scale: 1, transition: { ease: "easeOut", duration: 1 } },
 };
 
 export default function About() {
@@ -62,12 +63,19 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Right: Image */}
+          {/* Right: Image as Link */}
           <motion.div variants={imageItem} className="md:w-1/2 w-full flex justify-center items-center p-8">
-            <div className="relative w-full h-64 md:h-full rounded-xl overflow-hidden">
-              <Image src="/images/about1.jpg" alt="Lumava Studio" fill className="object-cover object-center" />
-              <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent rounded-xl"></div>
-            </div>
+            <Link href="/persona" className="w-full h-full cursor-auto"> {/* لینک بدون اثر hover */}
+              <div className="relative w-full h-64 md:h-full rounded-xl overflow-hidden">
+                <Image 
+                  src="/images/about1.jpg" 
+                  alt="Lumava Studio" 
+                  fill 
+                  className="object-cover object-center" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent rounded-xl"></div>
+              </div>
+            </Link>
           </motion.div>
         </div>
       </motion.div>
